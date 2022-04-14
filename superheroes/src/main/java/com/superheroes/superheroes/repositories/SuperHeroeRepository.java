@@ -11,6 +11,9 @@ import com.superheroes.superheroes.models.SuperHeroeModel;
 public interface SuperHeroeRepository extends CrudRepository<SuperHeroeModel, Long> {
     public abstract ArrayList<SuperHeroeModel> findByPrioridad(Integer prioridad);
     
-    public abstract ArrayList<SuperHeroeModel> findByNombre(String nombre);
+    public abstract ArrayList<SuperHeroeModel> findByNombre(String nombre);  
+    
+    
+    //public abstract ArrayList<SuperHeroeModel> findByNombreContaining(String nombre);
 
 }
