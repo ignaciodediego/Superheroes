@@ -8,8 +8,15 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
 @Entity
 @Table(name = "superHeroes")
+@Data @AllArgsConstructor @NoArgsConstructor
 public class SuperHeroeModel {
 	
 	@Id
@@ -21,6 +28,7 @@ public class SuperHeroeModel {
     private String superPoder;
     private Integer prioridad;
     
+    /*
 	public Long getId() {
 		return id;
 	}
@@ -45,6 +53,7 @@ public class SuperHeroeModel {
 	public void setPrioridad(Integer prioridad) {
 		this.prioridad = prioridad;
 	}
+	*/
     
     
 

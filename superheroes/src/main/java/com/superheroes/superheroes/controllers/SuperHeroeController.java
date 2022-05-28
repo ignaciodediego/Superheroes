@@ -22,7 +22,7 @@ public class SuperHeroeController {
 	
 	
     @Autowired
-    SuperHeroeService superHeroeService;
+    public SuperHeroeService superHeroeService;
 
     @GetMapping()
     public ArrayList<SuperHeroeModel> obtenerSuperHeroes(){
